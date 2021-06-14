@@ -33,8 +33,8 @@ class AlfandegaTest {
 
 	@Test
 	void testC() {
-		alfandega.declara(new Item("a", 25.0, 5.12));
-		alfandega.declara(new ItemTarifado("b", 50.0, 6.19, 0.6));
+		alfandega.declara(new Item("a", 25.0, 5.12)); //128
+		alfandega.declara(new ItemTarifado("b", 50.0, 6.19, 0.6)); //309.5
 		assertEquals(437.5, alfandega.getTotalDeclarado(), DELTA);
 		assertEquals(186.98, alfandega.getTotalDevido(), DELTA);
 	}

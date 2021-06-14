@@ -22,4 +22,14 @@ public class Item {
 	public double getRate() {
 		return this.rate;
 	}
+	
+	public double getTotalDec() {
+		double totalDec = this.rate * this.valor;
+		return totalDec;
+	}
+	
+	public double getTotalDev() {
+		double totalDev = this.rate * this.valor * 0.01;
+		return totalDev;
+	}
 }
